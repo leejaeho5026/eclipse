@@ -1,0 +1,13 @@
+SpringMVCJava
+
+Java 클래스에서 설정하기
+
+web.xml :AbstractAnnotationConfigDispatcherServletInitializer를 상속하거나 -> 메소드가 짧은데 자잘한 설정은 힘들다.
+		  WebApplicationInitializer 인터페이스를 구현함 -> 자잘한 설정도 설정가능 메소드가 길다
+		  => public class SpringConfigClass  implements WebApplicationInitializer{ 이렇게 사용
+		  
+root-context.xml : 상속이 없음
+servlet-context.xml : WebMvcConfigure 인터페이스를 구현함
+
+RootAppContext : root-context.xml 역활을 하는 클래스
+
